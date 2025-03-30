@@ -1,7 +1,4 @@
 # DSA-Visualizer
-Here's a project description for your **DSA Visualizer**:  
-
----
 
 # **DSA Visualizer**  
 
