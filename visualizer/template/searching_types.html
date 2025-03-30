@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Algorithms in DSA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6eb8f7, #f7f7f7);
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #17054a;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slide-in 1.5s ease-out;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: fade-in 2s ease-in;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: rotate(45deg);
+            animation: shine 5s infinite linear;
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shine {
+            from {
+                left: -50%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .algorithm {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .algorithm:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .algorithm::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background: rgba(0, 0, 0, 0.05);
+            transform: rotate(45deg);
+            transition: 0.5s ease-in-out;
+        }
+
+        .algorithm:hover::before {
+            top: 100%;
+        }
+
+        .algorithm h2 {
+            font-size: 1.8em;
+            color: #137721;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .algorithm h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #137721;
+            margin: 10px auto;
+        }
+
+        .algorithm p {
+            font-size: 1em;
+            color: #555;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .algorithm button {
+            background-color: #4a9ad3;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1em;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+        }
+
+        .algorithm button:hover {
+            background-color: #137721;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Searching Algorithms</h1>
+        <p>Explore the essential searching techniques that are fundamental in Data Structures and Algorithms</p>
+    </div>
+    <div class="container">
+        <!-- Linear Search -->
+        <div class="algorithm">
+            <h2>Linear Search</h2>
+            <p>Linear Search sequentially checks each element of the list until the target element is found or the list ends.</p>
+            <button onclick="location.href='linear-search.html'">Learn More</button>
+        </div>
+
+        <!-- Binary Search -->
+        <div class="algorithm">
+            <h2>Binary Search</h2>
+            <p>Binary Search divides the sorted list into halves to find the target element in logarithmic time.</p>
+            <button onclick="location.href='binary-search.html'">Learn More</button>
+        </div>
+
+        <!-- Jump Search -->
+        <div class="algorithm">
+            <h2>Jump Search</h2>
+            <p>Jump Search examines a sorted list by jumping a fixed number of steps and then performs a linear search.</p>
+            <button onclick="location.href='jump-search.html'">Learn More</button>
+        </div>
+
+        <!-- Interpolation Search -->
+        <div class="algorithm">
+            <h2>Interpolation Search</h2>
+            <p>Interpolation Search improves binary search by estimating the position of the target element based on its value.</p>
+            <button onclick="location.href='interpolation-search.html'">Learn More</button>
+        </div>
+
+        <!-- Exponential Search -->
+        <div class="algorithm">
+            <h2>Exponential Search</h2>
+            <p>Exponential Search locates the range where the target might be and then performs binary search within that range.</p>
+            <button onclick="location.href='exponential-search.html'">Learn More</button>
+        </div>
+
+        <!-- Fibonacci Search -->
+        <div class="algorithm">
+            <h2>Fibonacci Search</h2>
+            <p>Fibonacci Search uses Fibonacci numbers to divide the list and locate the target efficiently.</p>
+            <button onclick="location.href='fibonacci-search.html'">Learn More</button>
+        </div>
+    </div>
+</body>
+</html>
