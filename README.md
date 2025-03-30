@@ -1,7 +1,5 @@
 # DSA-Visualizer
 
-# **DSA Visualizer**  
-
 ## **Overview**  
 **DSA Visualizer** is an interactive web-based application designed to help users understand fundamental data structures through visual representation. Built using **HTML, CSS, and JavaScript** for the frontend, **Django (Python)** for the backend, and **MySQL** for data management, this project offers an engaging way to learn key data structures such as **Arrays, Linked Lists, Stacks, and Queues**.  
 
